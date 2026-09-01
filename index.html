@@ -11,14 +11,18 @@
         <h2>Pet Alerta</h2>
         <p>pronta ajuda para encontrar seu pet!</p>
 
-        <form class = "formulario" id 
+        <form class ="formulario" id="formPet">
+        <input type="text" id="nomePet" placeholder="Qual o nome do seu pet?" required>
+        <input type="text" id="infoPet" placeholder="Onde ele foi visto pela última vez?" required>
+        <input type="file" id="fotoPet" accept="image/*" required>
 
-
-
+            <button type="submit">Publicar Alerta</button>
+        </form>
+       <h3>Mural de Alertas:</h3>
+       <ul id="listadePets"></ul>
+       <p id= "MensagemVazia">Sem alertas ativos no momento</p>
 
     </div>
-
-
 
     <script src="script.js"></script>
 </body>
